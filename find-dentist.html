@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find a certified AVA Aligners dentist near you. Search our network of trusted dental professionals.">
+    <title>Find A Dentist - AVA Aligners</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">AVA</span>
+                    <span class="logo-text">Aligners</span>
+                </a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="why-us.html" class="nav-link">Why Us</a>
+                    <a href="how-it-works.html" class="nav-link">How It Works</a>
+                    <a href="our-dentists.html" class="nav-link">Our Dentists</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="find-dentist.html" class="btn btn-primary nav-cta active">Find A Dentist</a>
+                </div>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Find A Certified AVA Aligners Dentist</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Locate trusted dental professionals near you</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="section search-section">
+        <div class="container">
+            <div class="search-container" data-aos="fade-up">
+                <h2>Search for a Provider</h2>
+                <p>Enter your location to find certified AVA Aligners dentists in your area</p>
+                
+                <form class="dentist-search-form" id="dentistSearchForm">
+                    <div class="search-input-group">
+                        <div class="search-input-wrapper">
+                            <i class="fas fa-map-marker-alt search-icon"></i>
+                            <input type="text" id="locationInput" placeholder="Enter city, state, or ZIP code" required>
+                        </div>
+                        <div class="search-input-wrapper">
+                            <i class="fas fa-ruler-horizontal search-icon"></i>
+                            <select id="radiusSelect">
+                                <option value="10">Within 10 miles</option>
+                                <option value="25" selected>Within 25 miles</option>
+                                <option value="50">Within 50 miles</option>
+                                <option value="100">Within 100 miles</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="search-tips">
+                    <button class="btn-text" id="useLocationBtn">
+                        <i class="fas fa-location-arrow"></i> Use My Current Location
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="section results-section bg-light">
+        <div class="container">
+            <div class="results-layout">
+                <!-- Filters Sidebar -->
+                <div class="filters-sidebar" data-aos="fade-right">
+                    <h3>Filter Results</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Availability</h4>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="accepting-new">
+                            <span>Accepting New Patients</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="same-day">
+                            <span>Same-Day Appointments</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="weekend">
+                            <span>Weekend Hours</span>
+                        </label>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Specialization</h4>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="orthodontist">
+                            <span>Orthodontist</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="general-dentist">
+                            <span>General Dentist</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="prosthodontist">
+                            <span>Prosthodontist</span>
+                        </label>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Languages</h4>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="spanish">
+                            <span>Spanish</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="chinese">
+                            <span>Chinese</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="french">
+                            <span>French</span>
+                        </label>
+                    </div>
+                    
+                    <button class="btn btn-outline btn-block">Clear Filters</button>
+                </div>
+
+                <!-- Results List -->
+                <div class="results-list" data-aos="fade-left">
+                    <div class="results-header">
+                        <p class="results-count">Showing <strong>8 providers</strong> near San Francisco, CA</p>
+                        <div class="sort-dropdown">
+                            <label>Sort by:</label>
+                            <select id="sortSelect">
+                                <option value="distance">Distance</option>
+                                <option value="rating">Rating</option>
+                                <option value="name">Name A-Z</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Sample Provider Cards -->
+                    <div class="provider-card">
+                        <div class="provider-photo">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="provider-info">
+                            <div class="provider-header">
+                                <h3>Dr. Sarah Mitchell</h3>
+                                <div class="provider-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-text">5.0 (127 reviews)</span>
+                                </div>
+                            </div>
+                            <p class="provider-specialty"><i class="fas fa-stethoscope"></i> Board Certified Orthodontist</p>
+                            <p class="provider-address"><i class="fas fa-map-marker-alt"></i> 456 Market Street, San Francisco, CA 94102</p>
+                            <p class="provider-distance"><i class="fas fa-route"></i> 2.3 miles away</p>
+                            <div class="provider-features">
+                                <span class="feature-badge"><i class="fas fa-check"></i> Accepting New Patients</span>
+                                <span class="feature-badge"><i class="fas fa-clock"></i> Weekend Hours</span>
+                                <span class="feature-badge"><i class="fas fa-language"></i> Spanish</span>
+                            </div>
+                            <div class="provider-actions">
+                                <a href="tel:415-555-0123" class="btn btn-outline">
+                                    <i class="fas fa-phone"></i> Call
+                                </a>
+                                <button class="btn btn-primary" onclick="showBookingModal('Dr. Sarah Mitchell')">
+                                    <i class="fas fa-calendar-check"></i> Book Consultation
+                                </button>
+                                <button class="btn btn-text" onclick="toggleDetails(this)">
+                                    <i class="fas fa-info-circle"></i> More Info
+                                </button>
+                            </div>
+                            <div class="provider-details" style="display: none;">
+                                <p><strong>About:</strong> Dr. Mitchell has over 15 years of experience in orthodontics with specialized training in clear aligner therapy. She's treated over 2,000 patients with AVA Aligners.</p>
+                                <p><strong>Office Hours:</strong> Mon-Fri: 9am-6pm, Sat: 9am-2pm</p>
+                                <p><strong>Insurance:</strong> Most major insurance plans accepted</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="provider-card">
+                        <div class="provider-photo">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="provider-info">
+                            <div class="provider-header">
+                                <h3>Dr. Michael Chen</h3>
+                                <div class="provider-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="rating-text">4.8 (94 reviews)</span>
+                                </div>
+                            </div>
+                            <p class="provider-specialty"><i class="fas fa-stethoscope"></i> General Dentist, AVA Certified</p>
+                            <p class="provider-address"><i class="fas fa-map-marker-alt"></i> 789 Mission Street, San Francisco, CA 94103</p>
+                            <p class="provider-distance"><i class="fas fa-route"></i> 3.7 miles away</p>
+                            <div class="provider-features">
+                                <span class="feature-badge"><i class="fas fa-check"></i> Accepting New Patients</span>
+                                <span class="feature-badge"><i class="fas fa-calendar"></i> Same-Day Appointments</span>
+                                <span class="feature-badge"><i class="fas fa-language"></i> Chinese, English</span>
+                            </div>
+                            <div class="provider-actions">
+                                <a href="tel:415-555-0456" class="btn btn-outline">
+                                    <i class="fas fa-phone"></i> Call
+                                </a>
+                                <button class="btn btn-primary" onclick="showBookingModal('Dr. Michael Chen')">
+                                    <i class="fas fa-calendar-check"></i> Book Consultation
+                                </button>
+                                <button class="btn btn-text" onclick="toggleDetails(this)">
+                                    <i class="fas fa-info-circle"></i> More Info
+                                </button>
+                            </div>
+                            <div class="provider-details" style="display: none;">
+                                <p><strong>About:</strong> Dr. Chen offers comprehensive dental care with a focus on cosmetic dentistry. AVA Aligners certified provider since 2018.</p>
+                                <p><strong>Office Hours:</strong> Mon-Fri: 8am-7pm</p>
+                                <p><strong>Insurance:</strong> Accepts most PPO plans</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="provider-card">
+                        <div class="provider-photo">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="provider-info">
+                            <div class="provider-header">
+                                <h3>Dr. Emily Rodriguez</h3>
+                                <div class="provider-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-text">4.9 (156 reviews)</span>
+                                </div>
+                            </div>
+                            <p class="provider-specialty"><i class="fas fa-stethoscope"></i> Orthodontist & Prosthodontist</p>
+                            <p class="provider-address"><i class="fas fa-map-marker-alt"></i> 321 California Street, San Francisco, CA 94104</p>
+                            <p class="provider-distance"><i class="fas fa-route"></i> 4.2 miles away</p>
+                            <div class="provider-features">
+                                <span class="feature-badge"><i class="fas fa-check"></i> Accepting New Patients</span>
+                                <span class="feature-badge"><i class="fas fa-language"></i> Spanish, English</span>
+                            </div>
+                            <div class="provider-actions">
+                                <a href="tel:415-555-0789" class="btn btn-outline">
+                                    <i class="fas fa-phone"></i> Call
+                                </a>
+                                <button class="btn btn-primary" onclick="showBookingModal('Dr. Emily Rodriguez')">
+                                    <i class="fas fa-calendar-check"></i> Book Consultation
+                                </button>
+                                <button class="btn btn-text" onclick="toggleDetails(this)">
+                                    <i class="fas fa-info-circle"></i> More Info
+                                </button>
+                            </div>
+                            <div class="provider-details" style="display: none;">
+                                <p><strong>About:</strong> Dr. Rodriguez specializes in complex orthodontic cases and has been recognized as a top AVA Aligners provider for three consecutive years.</p>
+                                <p><strong>Office Hours:</strong> Mon-Thu: 9am-5pm, Fri: 9am-3pm</p>
+                                <p><strong>Insurance:</strong> In-network with most major carriers</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="load-more-container">
+                        <button class="btn btn-outline btn-lg">
+                            <i class="fas fa-chevron-down"></i> Load More Results
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section benefits-cta">
+        <div class="container">
+            <div class="section-header center" data-aos="fade-up">
+                <h2 class="section-title">What to Expect at Your Consultation</h2>
+            </div>
+            <div class="consultation-benefits">
+                <div class="benefit-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Comprehensive Evaluation</h3>
+                    <p>Complete oral health assessment and smile analysis</p>
+                </div>
+                <div class="benefit-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>3D Digital Scan</h3>
+                    <p>Quick, comfortable scanning to map your teeth</p>
+                </div>
+                <div class="benefit-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Custom Treatment Plan</h3>
+                    <p>See your complete smile transformation journey</p>
+                </div>
+                <div class="benefit-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Transparent Pricing</h3>
+                    <p>Clear cost breakdown with flexible payment options</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeBookingModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Book Your Consultation</h2>
+            <p class="modal-subtitle">Schedule with <strong id="selectedDentist"></strong></p>
+            
+            <form class="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookingFirstName">First Name *</label>
+                        <input type="text" id="bookingFirstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingLastName">Last Name *</label>
+                        <input type="text" id="bookingLastName" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookingEmail">Email *</label>
+                        <input type="email" id="bookingEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingPhone">Phone *</label>
+                        <input type="tel" id="bookingPhone" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="preferredDate">Preferred Date *</label>
+                    <input type="date" id="preferredDate" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="preferredTime">Preferred Time *</label>
+                    <select id="preferredTime" required>
+                        <option value="">Select a time</option>
+                        <option value="morning">Morning (9am-12pm)</option>
+                        <option value="afternoon">Afternoon (12pm-3pm)</option>
+                        <option value="evening">Evening (3pm-6pm)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-lg btn-block">
+                    <i class="fas fa-calendar-check"></i> Request Appointment
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3 class="footer-title">
+                        <span class="logo-icon">AVA</span>
+                        <span class="logo-text">Aligners</span>
+                    </h3>
+                    <p>Transform your smile with the premium clear aligner solution trusted by thousands worldwide.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="why-us.html">Why Choose Us</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>For Dentists</h4>
+                    <ul>
+                        <li><a href="our-dentists.html">Our Network</a></li>
+                        <li><a href="#">Become a Partner</a></li>
+                        <li><a href="#">Training & Support</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="find-dentist.html">Find A Dentist</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AVA Aligners. All rights reserved. | Designed for excellence in dental care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

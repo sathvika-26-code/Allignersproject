@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact AVA Aligners - Get in touch with our team for questions, support, or partnership opportunities.">
+    <title>Contact Us - AVA Aligners</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">AVA</span>
+                    <span class="logo-text">Aligners</span>
+                </a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="why-us.html" class="nav-link">Why Us</a>
+                    <a href="how-it-works.html" class="nav-link">How It Works</a>
+                    <a href="our-dentists.html" class="nav-link">Our Dentists</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                    <a href="find-dentist.html" class="btn btn-primary nav-cta">Find A Dentist</a>
+                </div>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Contact Us</h1>
+            <p data-aos="fade-up" data-aos-delay="100">We're here to help with all your questions</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container" data-aos="fade-right">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inquiryType">Inquiry Type *</label>
+                            <select id="inquiryType" name="inquiryType" required>
+                                <option value="">Select an option</option>
+                                <option value="patient">Patient Inquiry</option>
+                                <option value="dentist">Dentist Partnership</option>
+                                <option value="support">Treatment Support</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span>I'd like to receive updates and promotional emails from AVA Aligners</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-container" data-aos="fade-left">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions? We're always here to help.</p>
+                    
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Phone</h4>
+                                <p><strong>Patient Support:</strong><br>1-800-AVA-SMILE<br>(1-800-282-7645)</p>
+                                <p><strong>Dentist Support:</strong><br>1-800-AVA-DOCS<br>(1-800-282-3627)</p>
+                                <p class="info-hours">Mon-Fri: 8am-8pm EST<br>Sat-Sun: 9am-5pm EST</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p><strong>Patient Inquiries:</strong><br><a href="mailto:patients@avaaligners.com">patients@avaaligners.com</a></p>
+                                <p><strong>Dentist Partnerships:</strong><br><a href="mailto:providers@avaaligners.com">providers@avaaligners.com</a></p>
+                                <p><strong>General:</strong><br><a href="mailto:info@avaaligners.com">info@avaaligners.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Headquarters</h4>
+                                <p>AVA Aligners Inc.<br>
+                                123 Innovation Drive<br>
+                                Suite 500<br>
+                                San Francisco, CA 94105<br>
+                                United States</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Business Hours</h4>
+                                <p><strong>Customer Support:</strong><br>Monday - Friday: 8am - 8pm EST<br>Saturday - Sunday: 9am - 5pm EST</p>
+                                <p><strong>Office:</strong><br>Monday - Friday: 9am - 6pm PST</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-connect">
+                        <h4>Connect With Us</h4>
+                        <div class="social-links-large">
+                            <a href="#" aria-label="Facebook" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" aria-label="Instagram" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" aria-label="YouTube" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Quick Links -->
+    <section class="section faq-quick-links bg-light">
+        <div class="container">
+            <div class="section-header center" data-aos="fade-up">
+                <h2 class="section-title">Quick Answers</h2>
+                <p class="section-subtitle">Common questions answered</p>
+            </div>
+            <div class="quick-links-grid">
+                <a href="index.html#faq" class="quick-link-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>FAQs</h3>
+                    <p>Find answers to frequently asked questions</p>
+                </a>
+                <a href="how-it-works.html" class="quick-link-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-book-open"></i>
+                    <h3>How It Works</h3>
+                    <p>Learn about the treatment process</p>
+                </a>
+                <a href="products.html" class="quick-link-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-box-open"></i>
+                    <h3>Products</h3>
+                    <p>Explore our aligner options</p>
+                </a>
+                <a href="find-dentist.html" class="quick-link-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-search-location"></i>
+                    <h3>Find A Dentist</h3>
+                    <p>Locate a provider near you</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section map-section">
+        <div class="container">
+            <div class="section-header center" data-aos="fade-up">
+                <h2 class="section-title">Our Location</h2>
+                <p class="section-subtitle">Visit our headquarters in San Francisco</p>
+            </div>
+            <div class="map-container" data-aos="fade-up">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>AVA Aligners Headquarters<br>San Francisco, CA</p>
+                    <small>Interactive map would be integrated here</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3 class="footer-title">
+                        <span class="logo-icon">AVA</span>
+                        <span class="logo-text">Aligners</span>
+                    </h3>
+                    <p>Transform your smile with the premium clear aligner solution trusted by thousands worldwide.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="why-us.html">Why Choose Us</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>For Dentists</h4>
+                    <ul>
+                        <li><a href="our-dentists.html">Our Network</a></li>
+                        <li><a href="#">Become a Partner</a></li>
+                        <li><a href="#">Training & Support</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="find-dentist.html">Find A Dentist</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AVA Aligners. All rights reserved. | Designed for excellence in dental care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Button -->
+    <a href="find-dentist.html" class="sticky-cta" id="stickyCTA">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Find A Dentist</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
